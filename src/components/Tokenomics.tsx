@@ -19,7 +19,7 @@ export const options = {
   backgroundColor: "transparent",
   legend: {
     position: "left",
-    textStyle: { color: "white", fontSize: 14 },
+    textStyle: { color: "black", fontSize: 14 },
     maxLines: 5,
   },
   chartArea: { left: 0, right: 0 },

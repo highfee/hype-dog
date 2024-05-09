@@ -27,7 +27,7 @@ const Header = () => {
             autoPlay
             loop
             muted
-            className="max-w-[100px] rounded-lg"
+            className="max-w-[80px] md:max-w-[100px] rounded-lg"
           ></video>
           <div className="hidden lg:flex items-center gap-14">
             <Link href="/" className="hover:underline hover:underline-offset-4">

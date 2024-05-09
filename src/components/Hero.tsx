@@ -12,28 +12,35 @@ const sedan = Sedan({
 
 const Hero = () => {
   return (
-    <div className="relative pt-36 md:pt-52 pb-28 md:pb-40 -top-32 flex items-center ">
+    <div className="relative pt-36 md:pt-52 pb-20 md:pb-40 -top-32 flex items-center ">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-hero-gradient"></div>
-        <div className="h-[150px] bg-[#0f1907] absolute w-full -bottom-[120px] -skew-y-3"></div>
+        {/* <div className="h-[150px] bg-[#0f1907] absolute w-full -bottom-[120px] -skew-y-3"></div> */}
         <Image
           src="/grass.jpg"
           alt=""
           width="1000"
           height="700"
-          className=" object-cover h-full w-full"
+          className=" object-cover h-full w-full hidden lg:block"
+        />
+        <Image
+          src="/image1-transparent.png"
+          alt=""
+          width="1000"
+          height="700"
+          className=" object-cover h-full w-full  lg:hidden"
         />
       </div>
 
       <ContainerLayout>
         <div className="flex gap-20 relative z-50 w-full items-center text-gray-200">
           <div className={cn("flex-[3]   ", sedan.className)}>
-            <p className="text-3xl lg:text-4xl leading-relaxed">
+            <p className="text-2xl lg:text-4xl md:leading-relaxed bg-black/50 lg:bg-transparent p-4 rounded-lg lg:p-0">
               Introducing Hype Dog <br /> The New Boss of the Base Network Get
               $HYPD and be part of our journey to the moon!
             </p>
 
-            <div className="mt-20 flex   md:items-center gap-5 md:gap-10 md:text-lg">
+            <div className="mt-14 lg:mt-20 flex   md:items-center gap-5 md:gap-10 md:text-lg">
               <Link
                 href=""
                 className="py-2 px-5 lg:px-8 border border-white rounded-md hover:scale-105  w-fit"
@@ -48,7 +55,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-[2] hidden md:block ">
+          <div className="flex-[2] hidden lg:block ">
             <Image
               src="/image1-transparent.png"
               alt=""

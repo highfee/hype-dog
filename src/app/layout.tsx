@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("bg-[#0f1907]", lato.className)}>
+      <body className={cn("", lato.className)}>
         <div>
           <Header />
           {children}
