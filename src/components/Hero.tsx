@@ -12,10 +12,17 @@ const sedan = Sedan({
 
 const Hero = () => {
   return (
-    <div className="relative pt-36 md:pt-52 pb-20 md:pb-40 -top-32 flex items-center ">
+    <div className="relative pt-36 md:pt-52 pb-20 md:pb-40 -top-32 flex items-center bg-black ">
+      <Image
+        src="/wave (1).svg"
+        height="200"
+        width={5200}
+        alt=""
+        className="absolute w-full bottom-[0] z-50"
+      />
+
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-hero-gradient"></div>
-        {/* <div className="h-[150px] bg-[#0f1907] absolute w-full -bottom-[120px] -skew-y-3"></div> */}
         <Image
           src="/grass.jpg"
           alt=""
