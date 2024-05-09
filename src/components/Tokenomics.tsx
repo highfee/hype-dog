@@ -1,45 +1,79 @@
 "use client";
 
-import { Chart } from "react-google-charts";
+import { cn } from "@/lib/utils";
 import ContainerLayout from "./ContainerLayout";
+import Image from "next/image";
 
-export const data = [
-  ["Task", "1000000000000"],
-  ["Base Network Community Air Drop", 300000000000],
-  ["Fair Launch on Uniswap Pool", 500000000000],
-  ["Early Engagement/Early Investors", 60000000000],
-  ["Team Allocation", 90000000000],
-  ["Marketing", 50000000000], // CSS-style declaration
-];
+import { Rubik_Bubbles } from "next/font/google";
 
-export const options = {
-  title: "",
-  pieHole: 0.4,
-  is3D: false,
-  backgroundColor: "transparent",
-  legend: {
-    position: "left",
-    textStyle: { color: "black", fontSize: 14 },
-    maxLines: 5,
-  },
-  chartArea: { left: 0, right: 0 },
-};
+const rubik = Rubik_Bubbles({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const Tokenomics = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-10 relative bg-hero-gradient  overflow-hidden py-16 lg:py-36">
+      <Image
+        src="/wave (1).svg"
+        height="100"
+        width={5200}
+        alt=""
+        className="absolute w-full bottom-[0] translate-y-[30%] z-50"
+      />
+      <Image
+        src="/wave (1).svg"
+        height="100"
+        width={5200}
+        alt=""
+        className="absolute w-full top-[0] -translate-y-[30%] z-50 rotate-180"
+      />
       <ContainerLayout>
-        <p className="mb-10 text-3xl md:text-5xl text-white">Tokenomics</p>
-        <div className="flex flex-col lg:flex-col gap-5 lg:gap-10">
-          {/* <div className="flex-1">sds</div> */}
-          <div className="flex-1 ">
-            <Chart
-              chartType="PieChart"
-              width="100%"
-              height="400px"
-              data={data}
-              options={options}
-            />
+        <p
+          className={cn(
+            "mb-10 text-3xl md:text-4xl text-white",
+            rubik.className
+          )}
+        >
+          Tokenomics
+        </p>
+        <div className="grid grid-cols-tokenomics justify-center items-center gap-5 lg:gap-10">
+          <div className="py-20 pt-32 px-10 bg-[#e0e4ee] rounded-3xl text-center h-full">
+            <p className={cn("text-6xl text-[#FC5B62] ", rubik.className)}>
+              30%
+            </p>
+            <div className="text-xl mt-10">
+              <p>Airdrop to Base Network Community Air Drop</p>
+              <p className="mt-4">
+                (The air drop will be to holders of{" "}
+                <span className="text-[#FC5B62]">$BRETT</span> )
+              </p>
+            </div>
+          </div>
+          <div className="py-20 pt-32 px-10 bg-[#e0e4ee] rounded-3xl text-center h-full">
+            <p className={cn("text-6xl text-[#FC5B62] ", rubik.className)}>
+              50%
+            </p>
+            <div className="text-xl mt-10">
+              <p>Fair Launch on Uniswap Pool</p>
+              <p className="mt-4">(with locked liquidity)</p>
+            </div>
+          </div>
+          <div className="py-20 pt-32 px-10 bg-[#e0e4ee] rounded-3xl text-center h-full">
+            <p className={cn("text-6xl text-[#FC5B62] ", rubik.className)}>
+              6%
+            </p>
+            <div className="text-xl mt-10">
+              <p>Early Engagement/Early Investors</p>
+            </div>
+          </div>
+          <div className="py-20 pt-32 px-10 bg-[#e0e4ee] rounded-3xl text-center h-full">
+            <p className={cn("text-6xl text-[#FC5B62] ", rubik.className)}>
+              9%
+            </p>
+            <div className="text-xl mt-10">
+              <p>Team Allocation</p>
+            </div>
           </div>
         </div>
       </ContainerLayout>

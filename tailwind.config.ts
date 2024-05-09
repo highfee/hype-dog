@@ -25,6 +25,9 @@ const config = {
         "footer-gradient":
           "radial-gradient(circle, rgba(4,25,7,0.8) 17%, rgba(12,15,15,0.7) 81%)",
       },
+      gridTemplateColumns: {
+        tokenomics: "repeat(auto-fit, minmax(180px, 300px))",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
