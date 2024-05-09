@@ -12,10 +12,10 @@ const sedan = Sedan({
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[85vh] border -top-32 flex items-center ">
+    <div className="relative min-h-[85vh] -top-32 flex items-center ">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-hero-gradient"></div>
-        <div className="h-[150px] bg-white absolute w-full -bottom-[120px] -skew-y-3"></div>
+        <div className="h-[150px] bg-[#0f1907] absolute w-full -bottom-[120px] -skew-y-3"></div>
         <Image
           src="/grass.jpg"
           alt=""
@@ -29,8 +29,8 @@ const Hero = () => {
         <div className="flex gap-20 relative z-50 w-full items-center text-gray-200">
           <div className={cn("flex-[3]   ", sedan.className)}>
             <p className="text-4xl leading-relaxed">
-              Have fun with HypeDog ($HYPD) <br /> The New Meme Coin Boss of The
-              Base Network and get $HYPD to be part of our trip to the moon
+              Introducing Hype Dog <br /> The New Boss of the Base Network Get
+              $HYPD and be part of our journey to the moon!
             </p>
 
             <div className="mt-20 flex items-center gap-10 text-lg">

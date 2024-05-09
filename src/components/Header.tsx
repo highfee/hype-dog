@@ -8,7 +8,11 @@ import { cn } from "@/lib/utils";
 
 const Header = () => {
   return (
-    <div className={cn("py-5 sticky top-0 text-white text-lg font-light z-50")}>
+    <div
+      className={cn(
+        "py-5 relative stick top-0 text-white text-lg font-light z-50"
+      )}
+    >
       <ContainerLayout>
         <div className="flex justify-between items-center">
           <video
