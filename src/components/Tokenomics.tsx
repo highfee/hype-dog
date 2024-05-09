@@ -17,16 +17,22 @@ export const options = {
   pieHole: 0.4,
   is3D: false,
   backgroundColor: "transparent",
-  legend: { textStyle: { color: "white", fontSize: 16 } },
+  legend: {
+    position: "left",
+    textStyle: { color: "white", fontSize: 14 },
+    maxLines: 5,
+  },
+  chartArea: { left: 0, right: 0 },
 };
 
 const Tokenomics = () => {
   return (
-    <div>
+    <div className="mt-20">
       <ContainerLayout>
+        <p className="mb-10 text-3xl md:text-5xl text-white">Tokenomics</p>
         <div className="flex flex-col lg:flex-col gap-5 lg:gap-10">
-          <div className="flex-1"></div>
-          <div className="flex-1">
+          {/* <div className="flex-1">sds</div> */}
+          <div className="flex-1 ">
             <Chart
               chartType="PieChart"
               width="100%"

@@ -21,6 +21,9 @@ const config = {
       backgroundImage: {
         "hero-gradient":
           "linear-gradient(122deg,rgba(4,25,7,0.848182485884979)51%, rgba(12,15,15,0.7973564425770308) 100%);",
+
+        "footer-gradient":
+          "radial-gradient(circle, rgba(4,25,7,0.8) 17%, rgba(12,15,15,0.7) 81%)",
       },
     },
   },
