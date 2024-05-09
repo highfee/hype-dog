@@ -4,7 +4,14 @@ import { Twitter, Facebook } from "lucide-react";
 import { AiOutlineTikTok } from "react-icons/ai";
 import { BiLogoTelegram, BiMenu } from "react-icons/bi";
 
+import { Rubik_Bubbles } from "next/font/google";
+
 import { cn } from "@/lib/utils";
+
+const rubik = Rubik_Bubbles({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 import {
   Sheet,
@@ -22,13 +29,16 @@ const Header = () => {
     >
       <ContainerLayout>
         <div className="flex justify-between items-center">
-          <video
-            src="/hd-log.MOV"
-            autoPlay
-            loop
-            muted
-            className="max-w-[80px] md:max-w-[100px] rounded-lg"
-          ></video>
+          <div className="flex items-center gap-5">
+            <video
+              src="/hd-log.MOV"
+              autoPlay
+              loop
+              muted
+              className="max-w-[80px] md:max-w-[100px] rounded-lg"
+            ></video>
+            <p className={cn("text-3xl", rubik.className)}>HypeDog</p>
+          </div>
           <div className="hidden lg:flex items-center gap-14">
             <Link href="/" className="hover:underline hover:underline-offset-4">
               Home

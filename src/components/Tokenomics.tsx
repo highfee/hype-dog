@@ -31,13 +31,13 @@ const Tokenomics = () => {
       <ContainerLayout>
         <p
           className={cn(
-            "mb-10 text-3xl md:text-4xl text-white",
+            "mb-10 text-4xl md:text-5xl text-white",
             rubik.className
           )}
         >
           Tokenomics
         </p>
-        <p className="my-10 text-white text-2xl">
+        <p className="my-10 text-white text-xl">
           <span className="font-bold text-[#FC5B62]">Token Supply:</span> A
           Tail-Wagging Total of 1 Billion $HYPD Token will be released.
         </p>

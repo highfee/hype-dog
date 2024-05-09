@@ -37,13 +37,12 @@ const About = () => {
             </p>
 
             <p className="text-xl text-gray-300  leading-normal">
-              Hype Dog aims to bring the fun back to the meme coin space, with
-              our unique and purposely low quality marketing campaign, based on
-              fake ads, fake celebrity endorsements, and fake $HYPD token
-              history. We encourage our community to share all of the funny
-              marketing materials that we create (they can all be dowlaoded
-              above). Join the Hype Dog community today and get $HYPD to be part
-              of our trip to the moon!
+              Hype Dog is designed to capture the essence of meme culture with
+              its unique, purposely low quality, funny marketing campaign. Built
+              on the Base Network, Hype Dog will be an 80% fair launch/air drop,
+              with relinquished contract, doxxed owner wallets, and locked
+              liquidity. No rug pulls here! We are 100% open, and we always will
+              be!
             </p>
 
             <p className="text-white mt-14 text-2xl ">
