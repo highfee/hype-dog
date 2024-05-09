@@ -24,14 +24,13 @@ const About = () => {
             </p>
 
             <p className="text-xl text-gray-300  leading-normal">
-              Meme coins should be fun, and this project is definitely fun! Hype
-              Dog is not just another meme coin though, it is a cryptocurrency
-              designed to capture the essence of meme culture with its unique,
-              purposely low quality, funny marketing campaign. Built on the Base
-              Network, Hype Dog wants to demonstrate a commitment to
-              decentralization, with a nearly complete fair launch, based on the
-              token allotments below. Ownership of the contract will be
-              relinquished after launch and liquidity will be locked.
+              Hype Dog aims to bring the fun back to the meme coin space, with
+              our unique and purposely low quality marketing campaign, based on
+              fake ads, fake celebrity endorsements, and fake $HYPD token
+              history. We encourage our community to share all of the funny
+              marketing materials that we create (they can all be dowlaoded
+              above). Join the Hype Dog community today and get $HYPD to be part
+              of our trip to the moon!
             </p>
           </div>
           <div className={style}>
