@@ -19,6 +19,7 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -60,7 +61,7 @@ const Header = () => {
               target="_blank"
               className="hover:scale-105 hover:opacity-80"
             >
-              <Twitter strokeWidth={1.75} />
+              <FaXTwitter />
             </Link>
             <Link
               href="https://www.facebook.com/hypedog.offical"
@@ -140,7 +141,7 @@ const Header = () => {
                       target="_blank"
                       className="hover:scale-105 hover:opacity-80"
                     >
-                      <Twitter strokeWidth={1.75} />
+                      <FaXTwitter />
                     </Link>
                   </SheetClose>
                   <SheetClose>

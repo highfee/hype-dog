@@ -4,6 +4,7 @@ import ContainerLayout from "./ContainerLayout";
 import { Twitter, Facebook } from "lucide-react";
 import { AiOutlineTikTok } from "react-icons/ai";
 import { BiLogoTelegram, BiMenu } from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -63,8 +64,7 @@ const Footer = () => {
                 target="_blank"
                 className="hover:scale-105 hover:opacity-80 flex gap-3 items-center"
               >
-                <Twitter strokeWidth={1.75} />
-                Twitter
+                <FaXTwitter />X
               </Link>
               <Link
                 href="https://www.facebook.com/hypedog.offical"

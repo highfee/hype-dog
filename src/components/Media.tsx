@@ -33,8 +33,7 @@ const Media = () => {
                 rubik.className
               )}
             >
-              Unique Marketing Materials (these nuggets will be posted on social
-              accounts)
+              Unique Marketing Materials
             </p>
 
             <ul className="flex flex-col gap-5 list-inside">

@@ -27,6 +27,7 @@ const config = {
       },
       gridTemplateColumns: {
         tokenomics: "repeat(auto-fit, minmax(180px, 300px))",
+        "coming-soon": "repeat(auto-fit, minmax(280px, 1fr))",
       },
     },
   },
