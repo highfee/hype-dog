@@ -37,6 +37,10 @@ const Tokenomics = () => {
         >
           Tokenomics
         </p>
+        <p className="my-10 text-white text-2xl">
+          <span className="font-bold text-[#FC5B62]">Token Supply:</span> A
+          Tail-Wagging Total of 1 Billion $HYPD Token will be released.
+        </p>
         <div className="grid grid-cols-tokenomics justify-center items-center gap-5 lg:gap-10">
           <div className="py-20 pt-32 px-10 bg-[#e0e4ee] rounded-3xl text-center h-full">
             <p className={cn("text-6xl text-[#FC5B62] ", rubik.className)}>
@@ -73,6 +77,14 @@ const Tokenomics = () => {
             </p>
             <div className="text-xl mt-10">
               <p>Team Allocation</p>
+            </div>
+          </div>
+          <div className="py-20 pt-32 px-10 bg-[#e0e4ee] rounded-3xl text-center h-full">
+            <p className={cn("text-6xl text-[#FC5B62] ", rubik.className)}>
+              5%
+            </p>
+            <div className="text-xl mt-10">
+              <p>Marketing</p>
             </div>
           </div>
         </div>
