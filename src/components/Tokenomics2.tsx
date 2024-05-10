@@ -84,7 +84,12 @@ const Tokenomics2 = () => {
             >
               <Image src={tokennomic.image} alt="" width="80" height="80" />
               <div className="text-lg max-w-[1000px] ">
-                <p className={cn("text-2xl mb-3", rubik.className)}>
+                <p
+                  className={cn(
+                    "text-2xl mb-3 text-center md:text-left",
+                    rubik.className
+                  )}
+                >
                   {tokennomic.title}
                 </p>
                 <p className="text-gray-300">{tokennomic.description}</p>

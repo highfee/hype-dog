@@ -38,7 +38,9 @@ const Header = () => {
               muted
               className="max-w-[80px] md:max-w-[100px] rounded-lg"
             ></video>
-            <p className={cn("text-3xl", rubik.className)}>HypeDog</p>
+            <p className={cn("text-2xl md:text-3xl", rubik.className)}>
+              Hype Dog
+            </p>
           </div>
           <div className="hidden lg:flex items-center gap-14">
             <Link href="/" className="hover:underline hover:underline-offset-4">
