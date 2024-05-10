@@ -24,6 +24,12 @@ const config = {
 
         "footer-gradient":
           "radial-gradient(circle, rgba(4,25,7,0.8) 17%, rgba(12,15,15,0.7) 81%)",
+
+        "cards-gradient":
+          "linear-gradient(83deg, rgba(9,20,1,0.98) 45%, rgba(9,20,1,0.8914444713432247) 100%);",
+
+        hypedog1: "url('/image1-transparent.png')",
+        hypedog2: "url('/img2.jpeg')",
       },
       gridTemplateColumns: {
         tokenomics: "repeat(auto-fit, minmax(180px, 300px))",

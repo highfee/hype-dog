@@ -20,32 +20,36 @@ const whys = [
 
 const Media = () => {
   const style =
-    "p-10 bg-[#091401] relative rounded-xl after:absolute after:left-4 after:top-4  after:right-4 md:after:-right-4 after:-bottom-4 after:-z-10 after:bg-[#e0e4ee] after:rounded-xl flex-";
+    "p-10 bg-[#091401 relative rounded-xl after:absolute after:left-4 after:top-4  after:right-4 md:after:-right-4 after:-bottom-4 after:-z-10 after:bg-[#e0e4ee] after:rounded-xl relative";
 
   return (
     <div className="my-10 md:my-20">
       <ContainerLayout>
         <div className="flex gap-10 flex-col lg:flex-ro">
-          <div className={style}>
-            <p
-              className={cn(
-                "my-8 text-white text-2xl md:text-3xl max-w-[1000px]",
-                rubik.className
-              )}
-            >
-              Unique Marketing Materials
-            </p>
+          <div className={style + " bg-hypedog2 bg-no-repeat bg-right"}>
+            <div className="absolute inset-0 bg-cards-gradient rounded-xl"></div>
 
-            <ul className="flex flex-col gap-5 list-inside">
-              {whys.map((why, i) => (
-                <li
-                  key={i}
-                  className="text-white flex items-center gap-2 text-lg "
-                >
-                  <span>{why}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="relative z-20">
+              <p
+                className={cn(
+                  "my-8 text-white text-2xl md:text-3xl max-w-[1000px]",
+                  rubik.className
+                )}
+              >
+                Unique Marketing Materials
+              </p>
+
+              <ul className="flex flex-col gap-5 list-inside">
+                {whys.map((why, i) => (
+                  <li
+                    key={i}
+                    className="text-white flex items-center gap-2 text-lg "
+                  >
+                    <span>{why}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </ContainerLayout>
