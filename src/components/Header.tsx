@@ -30,7 +30,7 @@ const Header = () => {
     >
       <ContainerLayout>
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-6 md:gap-10">
             <video
               src="/hd-log.MOV"
               autoPlay

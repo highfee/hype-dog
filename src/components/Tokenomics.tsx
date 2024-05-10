@@ -39,7 +39,7 @@ const Tokenomics = () => {
         </p>
         <p className="my-10 text-white text-xl">
           <span className="font-bold text-[#FC5B62]">Token Supply:</span> A
-          Tail-Wagging Total of 1 Billion $HYPD Token will be released.
+          Tail-Wagging Total of 1,000,000,000,000 $HYPD Token will be released.
         </p>
         <div className="grid grid-cols-tokenomics justify-center items-center gap-5 lg:gap-10">
           <div className="py-20 pt-32 px-10 bg-[#e0e4ee] rounded-3xl text-center h-full">

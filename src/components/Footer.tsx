@@ -64,7 +64,7 @@ const Footer = () => {
                 target="_blank"
                 className="hover:scale-105 hover:opacity-80 flex gap-3 items-center"
               >
-                <FaXTwitter />X
+                <FaXTwitter /> X
               </Link>
               <Link
                 href="https://www.facebook.com/hypedog.offical"
