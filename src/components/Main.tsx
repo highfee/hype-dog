@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Header from "./Header";
 
-const Main = ({ page }) => {
+const Main = ({ page }: { page: any }) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => setLoading(false), 6000);
