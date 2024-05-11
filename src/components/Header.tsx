@@ -22,9 +22,10 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { FaXTwitter } from "react-icons/fa6";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
+  const video = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -33,6 +34,8 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // video?.current?.volume = 0.3;
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -48,17 +51,26 @@ const Header = () => {
     >
       <ContainerLayout>
         <div className="flex justify-between items-center">
-          <p className={cn("text-2xl md:text-3xl", rubik.className)}>
+          <p
+            className={cn(
+              "text-xl md:text-3xl opacity-0 md:opacity-100",
+              rubik.className
+            )}
+          >
             Hype Dog
           </p>
-          <div className="md:hidden relative -left-8">
+          <div className="lg:hidden relative -left-8 flex flex-col items-center">
             <video
               src="/hd-log.MOV"
               autoPlay
               loop
-              muted
               className="max-w-[130px] md:max-w-[150px] rounded-lg"
+              muted
+              // ref={video}
             ></video>
+            <p className={cn("text-xl md:text-3xl", rubik.className)}>
+              Hype Dog
+            </p>
           </div>
 
           <div className="hidden lg:flex items-center gap-14">

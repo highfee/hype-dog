@@ -3,6 +3,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
+import Main from "@/components/Main";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -25,10 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("", lato.className)}>
-        <div>
-          <Header />
-          {children}
-        </div>
+        {/* <Header />
+        {children} */}
+        <Main page={children} />
       </body>
     </html>
   );
