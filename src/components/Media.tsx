@@ -9,13 +9,13 @@ const rubik = Rubik_Bubbles({
 });
 
 const whys = [
-  "🎦 The History of Hype Dog (fake documentary, two parts)",
-  "🎦 Hype Dog: The True Hollywood Story (fake documentary, three parts)",
-  "🎦 Bad Celebrity Deep Fakes (fake celebrity endorsements and beefs)",
-  "📸 Hype Dog Global Ads (fake still ads around the world)",
-  "🎦 Hype Dog GIF Mashups (30 second long GIF mashups)",
-  "📸 Hype Dog Logos (logo and animated logo)",
-  "📸 The Rumor Mill (memes with fake rumors about Hype Dog)",
+  "🎦 The History of Hype Dog ",
+  "🎦 Hype Dog: The True Hollywood Story ",
+  "🎦 Bad Celebrity Deep Fakes ",
+  "📸 Hype Dog Global Ads",
+  "🎦 Hype Dog GIF Mashups ",
+  "📸 Hype Dog Logos ",
+  "📸 The Rumor Mill ",
 ];
 
 const Media = () => {
@@ -26,7 +26,11 @@ const Media = () => {
     <div className="my-10 md:my-20">
       <ContainerLayout>
         <div className="flex gap-10 flex-col lg:flex-ro">
-          <div className={style + " bg-hypedog2 bg-no-repeat bg-right"}>
+          <div
+            className={
+              style + " bg-hypedog2 bg-no-repeat bg-righ bg-cover bg-fixed"
+            }
+          >
             <div className="absolute inset-0 bg-cards-gradient rounded-xl"></div>
 
             <div className="relative z-20">

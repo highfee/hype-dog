@@ -14,7 +14,7 @@ const Summary = () => {
   return (
     <div className="my-10 lg:my-20">
       <ContainerLayout>
-        <div className={style + " bg-hypedog1 bg-no-repeat bg-right"}>
+        <div className={style + " bg-hypedog1 bg-no-repeat bg-right bg-cover"}>
           <div className="absolute inset-0 bg-cards-gradient rounded-xl"></div>
           <div className="relative z-20">
             <p
