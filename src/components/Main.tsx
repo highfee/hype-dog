@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Header from "./Header";
 
 const Main = ({ page }: { page: any }) => {
-  const video = useRef(null);
+  const video = useRef<HTMLVideoElement>(null);
   const [loading, setLoading] = useState(true);
   const [display, setDisplay] = useState(true);
 
@@ -17,7 +17,7 @@ const Main = ({ page }: { page: any }) => {
     setTimeout(() => {
       setLoading(false);
       if (video.current) {
-        video.current.mute;
+        video.current.muted;
       }
     }, 7200);
   };
