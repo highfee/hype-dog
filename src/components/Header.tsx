@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import ContainerLayout from "./ContainerLayout";
 import { Twitter, Facebook } from "lucide-react";
@@ -20,39 +22,74 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { FaXTwitter } from "react-icons/fa6";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
   return (
     <div
       className={cn(
-        "py-5 relative stick top-0 text-white text-lg font-light z-50"
+        "py-5 top-0 text-white text-lg font-light z-[100] relative  ",
+        scrollPosition > 700 &&
+          "sticky bg-hero-gradient backdrop-blur-md transition-all animate-in"
       )}
     >
       <ContainerLayout>
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-6 md:gap-10">
+          <p className={cn("text-2xl md:text-3xl", rubik.className)}>
+            Hype Dog
+          </p>
+          <div className="md:hidden relative -left-8">
             <video
               src="/hd-log.MOV"
               autoPlay
               loop
               muted
-              className="max-w-[80px] md:max-w-[100px] rounded-lg"
+              className="max-w-[130px] md:max-w-[150px] rounded-lg"
             ></video>
-            <p className={cn("text-2xl md:text-3xl", rubik.className)}>
-              Hype Dog
-            </p>
           </div>
+
           <div className="hidden lg:flex items-center gap-14">
             <Link href="/" className="hover:underline hover:underline-offset-4">
               Home
             </Link>
-            <Link href="/" className="hover:underline hover:underline-offset-4">
+            <Link
+              href="#about"
+              className="hover:underline hover:underline-offset-4"
+            >
               About
             </Link>
-            <Link href="/" className="hover:underline hover:underline-offset-4">
+            <div className="hidden md:block">
+              <video
+                src="/hd-log.MOV"
+                autoPlay
+                loop
+                muted
+                className="max-w-[130px] md:max-w-[150px] rounded-lg"
+              ></video>
+            </div>
+            <Link
+              href="#tokenomics"
+              className="hover:underline hover:underline-offset-4"
+            >
               Tokenomics
             </Link>
-            <Link href="/" className="hover:underline hover:underline-offset-4">
+            <Link
+              href="#buy"
+              className="hover:underline hover:underline-offset-4"
+            >
               Buy
             </Link>
           </div>
@@ -101,9 +138,9 @@ const Header = () => {
               <SheetTrigger>
                 <BiMenu size={28} className="cursor-pointer" />
               </SheetTrigger>
-              <SheetContent className="min-w-screen">
-                <div className="flex flex-col items-center gap-14 text-white p-20">
-                  <SheetClose>
+              <SheetContent className="min-w-[100vw]">
+                <div className="flex flex-col items-center gap-14 text-white p-20  min-w-screen">
+                  <SheetClose asChild>
                     <Link
                       href="/"
                       className="hover:underline hover:underline-offset-4"
@@ -111,23 +148,23 @@ const Header = () => {
                       Home
                     </Link>
                   </SheetClose>
-                  <SheetClose>
+                  <SheetClose asChild>
                     <Link
-                      href="/"
+                      href="#about"
                       className="hover:underline hover:underline-offset-4"
                     >
                       About
                     </Link>
                   </SheetClose>
-                  <SheetClose>
+                  <SheetClose asChild>
                     <Link
-                      href="/"
+                      href="#tokenomics"
                       className="hover:underline hover:underline-offset-4"
                     >
                       Tokenomics
                     </Link>
                   </SheetClose>
-                  <SheetClose>
+                  <SheetClose asChild>
                     <Link
                       href="/"
                       className="hover:underline hover:underline-offset-4"
@@ -137,7 +174,7 @@ const Header = () => {
                   </SheetClose>
                 </div>
                 <div className="text-white justify-center flex items-center gap-3">
-                  <SheetClose>
+                  <SheetClose asChild>
                     <Link
                       href="https://x.com/HypeDog_Offical?t=WxydCUHBw0TOY8E65ygK3A&s=09"
                       target="_blank"
@@ -146,7 +183,7 @@ const Header = () => {
                       <FaXTwitter />
                     </Link>
                   </SheetClose>
-                  <SheetClose>
+                  <SheetClose asChild>
                     <Link
                       href="https://www.facebook.com/hypedog.offical"
                       target="_blank"
@@ -157,7 +194,7 @@ const Header = () => {
                   </SheetClose>
 
                   <div className="h-[28px] w-[0.5px] bg-gray-100"></div>
-                  <SheetClose>
+                  <SheetClose asChild>
                     <Link
                       href="https://tiktok.com/@hypedogofficial"
                       target="_blank"
@@ -171,7 +208,7 @@ const Header = () => {
                       />
                     </Link>
                   </SheetClose>
-                  <SheetClose>
+                  <SheetClose asChild>
                     <Link
                       href="https://t.me/+Hcm5jDYfkvMxOWI9"
                       target="_blank"

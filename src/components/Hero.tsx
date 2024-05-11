@@ -24,14 +24,14 @@ const Hero = () => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-hero-gradient"></div>
         <Image
-          src="/grass.jpg"
+          src="/grass.svg"
           alt=""
           width="1000"
           height="700"
-          className=" object-cover h-full w-full hidden lg:block"
+          className="object-cover h-full w-full hidden lg:block"
         />
         <Image
-          src="/image1-transparent.png"
+          src="/image1-transparent.svg"
           alt=""
           width="1000"
           height="700"
@@ -64,7 +64,7 @@ const Hero = () => {
           </div>
           <div className="flex-[2] hidden lg:block ">
             <Image
-              src="/image1-transparent.png"
+              src="/image1-transparent.svg"
               alt=""
               height="400"
               width="500"

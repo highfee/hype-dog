@@ -31,7 +31,7 @@ const tokennomics = [
     title: "Team Allocation",
     description:
       "9% of the token supply is allocated to the project's team members, rewarding their contributions to the creation, development and success of Hype Dog. Ownership of the contract will be relinquished after launch",
-    image: "/fist.png",
+    image: "/fist.svg",
   },
   {
     title: "Marketing",
@@ -43,7 +43,10 @@ const tokennomics = [
 
 const Tokenomics2 = () => {
   return (
-    <div className="mt-10 relative bg-hero-gradient  overflow-hidden py-16 lg:py-36">
+    <div
+      className="mt-10 relative bg-hero-gradient  overflow-hidden py-16 lg:py-36"
+      id="tokenomics"
+    >
       <Image
         src="/wave (1).svg"
         height="100"
@@ -68,8 +71,9 @@ const Tokenomics2 = () => {
           Tokenomics
         </p>
         <p className="my-10 text-white text-xl">
-          <span className="font-bold text-[#FC5B62]">Token Supply:</span> A
-          Tail-Wagging Total of 1,000,000,000,000 $HYPD Token will be released.
+          <span className="font-bold text-[#FC5B62]">Total Supply:</span> Hype
+          Dog launches with its entire supply of 1,000,000,000,000 (one
+          trillion) $HYPD tokens.
         </p>
 
         <p className="my-10 text-white text-2xl">

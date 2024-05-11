@@ -23,7 +23,7 @@ const About = () => {
   // const style =
   //   "p-10 bg-[#091401] relative rounded-lg after:absolute after:left-4 after:top-4  after:right-4 md:after:-right-4 after:-bottom-4 after:-z-10 after:bg-[#566e40] after:rounded-lg flex-";
   return (
-    <div className="my-8 mt-0 ">
+    <div className="my-8 mt-0 " id="about">
       <ContainerLayout>
         <div className="flex gap-10 flex-col lg:flex-ro">
           <div

@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row gap-10  pl0 lg:pl-0 text-base">
           <div className="flex-1 flex flex-col gap-5 justify-start ">
             <Image
-              src="/image1-transparent.png"
+              src="/image1-transparent.svg"
               alt=""
               height="140"
               width="140"
